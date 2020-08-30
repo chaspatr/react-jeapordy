@@ -1,9 +1,22 @@
-// import React, { Component } from 'react';
+import React from "react";
 
-// class Display extends Component {
-//     constructor(props){
-//         super(props);
-//     }
-// }
+function Display(props) {
+  return (
+    <div>
+      <p>
+        <strong>Category: {props.category}</strong>
+      </p>
+      <p>
+        <strong>Points: {props.value}</strong>
+      </p>
+      <p>
+        <strong>Question: {props.question}</strong>
+      </p>
+      <p>
+        <strong>Score: {props.score}</strong>
+      </p>
+    </div>
+  );
+}
 
-// export default Display
+export default Display;

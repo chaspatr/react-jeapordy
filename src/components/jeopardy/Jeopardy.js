@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import jeopardy service
 import JeopardyService from "../../jeopardyService";
-
+import Display from "../display/Display";
 class Jeopardy extends Component {
   constructor(props) {
     super(props);
@@ -56,6 +56,7 @@ class Jeopardy extends Component {
     } else {
       this.setState({ score: this.state.score - this.state.data.value });
     }
+    this.setState({ value: "" });
     this.getNewQuestion();
 
     event.preventDefault();
@@ -66,22 +67,13 @@ class Jeopardy extends Component {
     console.log(this.state.data.answer);
     return (
       <div>
-        <p>
-          <strong>Category: </strong>
-          {JSON.stringify(this.state.data.category.title)}
-        </p>
-        <p>
-          <strong>Points: </strong>
-          {JSON.stringify(this.state.data.value)}
-        </p>
-        <p>
-          <strong>Question: </strong>
-          {JSON.stringify(this.state.data.question)}
-        </p>
-        <p>
-          <strong>Score: </strong>
-          {this.state.score}
-        </p>
+        <Display
+          category={this.state.data.category.title}
+          value={this.state.data.value}
+          question={this.state.data.question}
+          score={this.state.score}
+        />
+
         <form onSubmit={this.handleSubmit}>
           <label>
             What is your answer?
