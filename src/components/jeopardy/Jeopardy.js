@@ -72,19 +72,10 @@ class Jeopardy extends Component {
           value={this.state.data.value}
           question={this.state.data.question}
           score={this.state.score}
+          input={this.state.value}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
         />
-
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            What is your answer?
-            <input
-              type="text"
-              value={this.state.value}
-              onChange={this.handleChange}
-            />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
       </div>
     );
   }

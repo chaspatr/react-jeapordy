@@ -15,6 +15,17 @@ function Display(props) {
       <p>
         <strong>Score: {props.score}</strong>
       </p>
+      <form onSubmit={props.handleSubmit}>
+        <label>
+          What is your answer?
+          <input
+            type="text"
+            value={props.input}
+            onChange={props.handleChange}
+          />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 }
