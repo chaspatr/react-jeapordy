@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-jeopardy/static/css/main.be521adc.chunk.css",
+    "main.js": "/react-jeopardy/static/js/main.8ee7d3ef.chunk.js",
+    "main.js.map": "/react-jeopardy/static/js/main.8ee7d3ef.chunk.js.map",
+    "runtime-main.js": "/react-jeopardy/static/js/runtime-main.d08202c7.js",
+    "runtime-main.js.map": "/react-jeopardy/static/js/runtime-main.d08202c7.js.map",
+    "static/js/2.e9e4cedb.chunk.js": "/react-jeopardy/static/js/2.e9e4cedb.chunk.js",
+    "static/js/2.e9e4cedb.chunk.js.map": "/react-jeopardy/static/js/2.e9e4cedb.chunk.js.map",
+    "index.html": "/react-jeopardy/index.html",
+    "precache-manifest.d4cd69953ee86d94331e9e0616894ea2.js": "/react-jeopardy/precache-manifest.d4cd69953ee86d94331e9e0616894ea2.js",
+    "service-worker.js": "/react-jeopardy/service-worker.js",
+    "static/css/main.be521adc.chunk.css.map": "/react-jeopardy/static/css/main.be521adc.chunk.css.map",
+    "static/js/2.e9e4cedb.chunk.js.LICENSE.txt": "/react-jeopardy/static/js/2.e9e4cedb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d08202c7.js",
+    "static/js/2.e9e4cedb.chunk.js",
+    "static/css/main.be521adc.chunk.css",
+    "static/js/main.8ee7d3ef.chunk.js"
+  ]
+}
